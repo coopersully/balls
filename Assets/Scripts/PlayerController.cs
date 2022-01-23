@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
     // Called only from OnTriggerEnter() when a player collects a Collectible
     void SetCountText()
     {
-        countText.text = "Count: " + count.ToString();
+        countText.text = "Count: " + count.ToString() + "/12";
         if (count >= 12)
         {
             winTextObject.SetActive(true);
